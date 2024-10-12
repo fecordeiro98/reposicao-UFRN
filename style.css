@@ -20,6 +20,10 @@ input {
 tr td:last-child {
     text-align: center;
 }
+button {
+    background-color: #164194;
+    color: white;
+}
 footer {
     margin-top: 12pt;
     border: 3px double #164194; border-radius: 10px;
