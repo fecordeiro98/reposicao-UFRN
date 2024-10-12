@@ -12,3 +12,7 @@ tr td:last-child {
 footer {
     margin-top: 12pt;
 }
+
+#espacador {
+    height: 12pt;
+}
