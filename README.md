@@ -45,3 +45,5 @@ Este é um código HTML que define uma página web para uma "Calculadora de Repo
 - Os campos de média e média final são desativados (`disabled`), o que significa que não podem ser editados diretamente pelo usuário.
 
 Este código fornece a base para uma calculadora simples e pode ser expandido com funcionalidades adicionais, como validação de entrada e melhor tratamento de erros.
+
+Texto gerado por inteligência artificial
