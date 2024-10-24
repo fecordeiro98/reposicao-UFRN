@@ -4,12 +4,18 @@ html, input, button {
     font-family: 'Lato', sans-serif;
     font-size: 12pt;
 }
-html {
+html, table {
     background-color: #0095db;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 table {
     border: 1px solid #164194; border-radius: 10px;
     padding: 5px;
+    width: 420px;
 }
 input {
     width: 70px;
@@ -23,6 +29,7 @@ tr td:last-child {
 button {
     background-color: #164194;
     border: 1px solid black; border-radius: 5px;
+    padding: 3px;
     color: white;
 }
 footer {
