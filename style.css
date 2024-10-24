@@ -38,6 +38,9 @@ footer {
     padding: 5px;
 }
 
+#media, #media-f {
+    background-color: lightgray;
+}
 #espacador {
     height: 12pt;
 }
