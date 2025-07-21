@@ -8,42 +8,63 @@
 </head>
 <body>
     <main>
-        <table>
-            <tr>
-                <td>Unidade 1:</td>
-                <td><input type="number" name="" id="u1" min="0" max="10" step="0.1"></td>
-            </tr>
-            <tr>
-                <td>Unidade 2:</td>
-                <td><input type="number" name="" id="u2" min="0" max="10" step="0.1"></td>
-            </tr>
-            <tr>
-                <td>Unidade 3:</td>
-                <td><input type="number" name="" id="u3" min="0" max="10" step="0.1"></td>
-            </tr>
-            <tr>
-                <td>Média:</td>
-                <td><input type="text" name="" id="media" disabled></td>
-            </tr>
-            <tr>
-                <td>Reposição:</td>
-                <td><input type="number" name="" id="reposicao" min="0" max="10" step="0.1"></td>
-            </tr>
-            <tr>
-                <td>Média final:</td>
-                <td><input type="text" name="" id="media-f" disabled></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><button onclick="calcular()">Calcular</button></td>
-            </tr>
-        </table>
+        <section>
+            <div id="p">
+                <p>O estudante tem a nota da reposição?</p>
+                <table>
+                    <tr>
+                        <td><input type="radio" name="selecao" id="sim" value="1" checked></td>
+                        <td>Sim</td>
+                        <td id="espaco"></td>
+                        <td><input type="radio" name="selecao" id="nao" value="0"></td>
+                        <td>Não</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <td>Unidade 1:</td>
+                        <td><input type="number" name="" id="u1" min="0" max="10" step="0.1"></td>
+                    </tr>
+                    <tr>
+                        <td>Unidade 2:</td>
+                        <td><input type="number" name="" id="u2" min="0" max="10" step="0.1"></td>
+                    </tr>
+                    <tr>
+                        <td>Unidade 3:</td>
+                        <td><input type="number" name="" id="u3" min="0" max="10" step="0.1"></td>
+                    </tr>
+                    <tr>
+                        <td>Média:</td>
+                        <td><input type="text" name="" id="media" disabled></td>
+                    </tr>
+                    <tr>
+                        <td>Reposição:</td>
+                        <td><input type="number" name="" id="reposicao" min="0" max="10" step="0.1"></td>
+                    </tr>
+                    <tr>
+                        <td>Média final:</td>
+                        <td><input type="text" name="" id="media-f" disabled></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button onclick="calcular()">Calcular</button></td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <p id="texto">
+                    <!-- Preenchido com JavaScript -->
+                </p>
+            </div>
+        </section>
     </main>
     <footer>
         <div>
             <span>&copy; Felipe Cordeiro</span><br>
             <span>Agosto de 2024</span><br>
-            <span>v 2.1</span>
+            <span>v 3.0</span>
         </div>
         <div id="espacador"></div>
         <div>
