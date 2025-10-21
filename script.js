@@ -48,7 +48,7 @@ function calcular() {
     let mediaFinal = soma / 3;
     document.getElementById('media-f').value = mediaFinal.toFixed(1);
 
-    if (mediaFinal.toFixed(1) < 6) {
+    if (mediaFinal < 6) {
         texto.textContent = 'Estudante reprovado por média!';
         texto.style.color = 'red';
     } else {
