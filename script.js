@@ -31,7 +31,16 @@ function calcular() {
         notas.sort((a, b) => a - b);
         
         let somaMaiores = notas[1] + notas[2];
-        let reposicaoC = 18 - somaMaiores;
+        let reposicaoC = 15 - somaMaiores;
+
+        // Se precisar de menos de 4, fixa e avisa
+        if (reposicaoC < 4) {
+            reposicaoC = 4;
+            texto.textContent = 'O estudante precisa de menos de 4 pontos, mas precisa tirar pelo menos 4 para não ser reprovado!';
+            texto.style.color = 'orange';
+        } else {
+            texto.textContent = '';
+        }
         
         inputRepo.value = reposicaoC.toFixed(1);
         reposicao = reposicaoC;
@@ -49,7 +58,6 @@ function calcular() {
     document.getElementById('media-f').value = mediaFinal.toFixed(1);
 
     if (radioNao.checked) {
-        texto.textContent = '';
         return;
     }
 
