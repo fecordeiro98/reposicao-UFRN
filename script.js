@@ -53,8 +53,8 @@ function calcular() {
         return;
     }
 
-    if (mediaFinal < 6) {
-        texto.textContent = 'Estudante reprovado por média!';
+    if (mediaFinal < 5 || reposicao < 4) {
+        texto.textContent = 'Estudante reprovado por média (menor que 5,0) ou reposição (menor que 4,0)!';
         texto.style.color = 'red';
     } else {
         texto.textContent = 'Estudante aprovado!';
